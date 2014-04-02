@@ -123,9 +123,9 @@ textarea {
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
-    line-height: 1.4;
+    line-height: 1.2;
     margin-top: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     font-weight: 700;
 }
 
@@ -172,6 +172,7 @@ font-size: 2rem;
     text-decoration: none;
 }
 
+
 .site-title {
 font-size: 6rem;
 line-height: 2em;
@@ -214,7 +215,7 @@ margin-bottom: 0px;
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 1.5rem;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 .entry-meta a,
@@ -374,26 +375,24 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	border: 1px solid #ccc;
-	border-color: #ccc #ccc #bbb #ccc;
+	border: 1px solid #333;
+    background: #444;
+    color: #fff;
+    font-family: Helvetica, Arial, sans-serif;
 	border-radius: 3px;
-	background: #e6e6e6;
-	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-	color: rgba(0, 0, 0, .8);
 	cursor: pointer; /* Improves usability and consistency of cursor style between image-type 'input' and others */
 	-webkit-appearance: button; /* Corrects inability to style clickable 'input' types in iOS */
-	font-size: 12px;
-	font-size: 1.2rem;
-	line-height: 1;
-	padding: .6em 1em .4em;
-	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+    font-size: 18px;
+    line-height: 1;
+    padding: .6em 1em;
+
 }
 button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-	border-color: #ccc #bbb #aaa #bbb;
-	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
+	border: 1px solid #222;
+    background: #333;
 }
 button:focus,
 input[type="button"]:focus,
@@ -403,8 +402,8 @@ button:active,
 input[type="button"]:active,
 input[type="reset"]:active,
 input[type="submit"]:active {
-	border-color: #aaa #bbb #bbb #bbb;
-	box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
+	border: 1px solid #222;
+    background: #333;
 }
 input[type="checkbox"],
 input[type="radio"] {
@@ -628,6 +627,20 @@ a:active {
 }
 
 
+/* =Content
+----------------------------------------------- */
+.newsletter-pitch{
+    padding: 30px 30px 0;
+    border: 1px solid #ccc;
+    margin: 30px -20px;
+    background: #eee;
+}
+.newsletter-pitch h3 {
+    margin-bottom: 20px;
+}
+
+
+
 /* =Asides
 ----------------------------------------------- */
 
@@ -695,7 +708,7 @@ object {
 
 .site-main [class*="navigation"] {
 	margin: auto;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     font-size: 1.8rem;
     color: #9EABB3;
     text-align: center;
@@ -725,6 +738,10 @@ object {
 
 /* =Comments
 ----------------------------------------------- */
+
+#comments {
+    margin-top: 150px;
+}
 .comment-list, .comment-list .children {
 list-style-type: none;
 padding: 0;
@@ -732,7 +749,7 @@ padding: 0;
 
 .comment {
     border-top: #EBF2F6 1px solid;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     padding-top: 24px;
 }
 
@@ -741,14 +758,14 @@ padding: 0;
 }
 
 .comments-title {
-    font-weight: 300;
+    font-weight: bold;
 }
 .comment-author {
-    font-size: 1.6rem;
 }
 
 .comment-author img.avatar {
-    margin-right: 6px;
+    margin-right: 10px;
+    float:left;
 }
 
 .comment-metadata {
@@ -759,19 +776,16 @@ padding: 0;
 .comment-metadata a {
     color: #a2a2a2;
     text-decoration: none;
+    margin-right: 10px;
 }
 
 ol.comment-list {
     list-style: none;
-    margin: 1.5em 1.5em 0 0;
+    margin: 0.5em 1.5em 0 0;
 }
 
 li.comment {
     margin-bottom: 2em;
-}
-
-.comment-content {
-    margin-left: 1.5em;
 }
 
 .comment-content a {
@@ -780,8 +794,12 @@ li.comment {
 .bypostauthor {
 }
 
-.comment-body .reply {
-    font-size: 1.6rem;
+p.form-allowed-tags {
+    display:none;
+}
+
+#respond {
+    margin-top: 100px;
 }
 
 
@@ -808,7 +826,7 @@ li.comment {
     margin: 6rem 0 0 0;
     padding: 4rem 0;
     border-top: #EBF2F6 1px solid;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: 1.7em;
     color: #999;
@@ -939,7 +957,6 @@ text-decoration: none;
 
     h1, h2 {
         font-size: 3rem;
-        line-height: 1.1em;
         letter-spacing: -1px;
     }
 

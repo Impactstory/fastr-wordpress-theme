@@ -98,6 +98,18 @@ function fastr_comment( $comment, $args, $depth ) {
 						</time>
 					</a>
 					<?php edit_comment_link( __( 'Edit', 'fastr' ), '<span class="edit-link">', '</span>' ); ?>
+
+               <?php
+                  comment_reply_link( array_merge( $args, array(
+                     'add_below' => 'div-comment',
+                     'depth'     => $depth,
+                     'max_depth' => $args['max_depth'],
+                     'before'    => '<span class="reply">',
+                     'after'     => '</span>',
+                  ) ) );
+               ?>
+
+
 				</div><!-- .comment-metadata -->
 
 				<?php if ( '0' == $comment->comment_approved ) : ?>
@@ -109,15 +121,7 @@ function fastr_comment( $comment, $args, $depth ) {
 				<?php comment_text(); ?>
 			</div><!-- .comment-content -->
 
-			<?php
-				comment_reply_link( array_merge( $args, array(
-					'add_below' => 'div-comment',
-					'depth'     => $depth,
-					'max_depth' => $args['max_depth'],
-					'before'    => '<div class="reply">',
-					'after'     => '</div>',
-				) ) );
-			?>
+
 		</article><!-- .comment-body -->
 
 	<?php

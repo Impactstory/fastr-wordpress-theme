@@ -42,4 +42,15 @@
 			) );
 		?>
 	</div><!-- .entry-content -->
+
+	<div class="newsletter-pitch">
+	   <h3>Care about open science and altmetrics?</h3>
+	   <p>Awesome, us too. In fact, it's what we're <em>obsessed</em> with.
+	   And as a mission-driven non-profit, we love sharing our latest tips and insights
+	   with folks like you.
+	   <a href="http://impactstory.us4.list-manage.com/subscribe?u=26fcc4e14b24319755845d9e0&id=865c51e966">Sign up for our free newsletter</a>
+	   to get our latest and greatest.</p>
+	</div>
+
+
 </article><!-- #post-## -->
