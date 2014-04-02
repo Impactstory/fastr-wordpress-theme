@@ -17,7 +17,6 @@
                 <nav id="site-navigation" class="main-navigation" role="navigation">
                   <div class="menu">
                      <ul>
-                        <li><a href="http://impactstory.org">Impactstory home</a></li>
                         <li><a href="http://twitter.com/impactstory">Twitter</a></li>
                         <li><a href="http://facebook.com/Impactstory">Facebook</a></li>
                         <li><a href="https://plus.google.com/100164144715192552027/posts">g+</a></li>
@@ -27,6 +26,12 @@
             </div>
 
             <?php include(TEMPLATEPATH . "/searchform.php"); ?>
+
+
+            <div id="visit-impactstory">
+               <span class="leader">Do you know the full impact of your research?</span>
+               <span class="call-to-action">Find out at <a href="http://impactstory.org">Impactstory.</a></span>
+            </div>
 
 
             <div class="site-info">

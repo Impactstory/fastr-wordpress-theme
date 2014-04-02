@@ -598,6 +598,21 @@ a:active {
 .main-navigation li.current-menu-item a {
 }
 
+/* =the banner getting people to come to impactstory
+----------------------------------------------- */
+#visit-impactstory {
+    text-align: center;
+    padding: 5px 0;
+    font-size: 16px;
+    font-family: helvetica, arial, sans-serif;
+    margin-top: 50px;
+}
+#visit-impactstory a {
+    text-decoration: underline;
+
+}
+
+
 /* =Content
 ----------------------------------------------- */
 
@@ -633,7 +648,7 @@ a:active {
     padding: 30px 30px 0;
     border: 1px solid #ccc;
     margin: 30px -20px;
-    background: #eee;
+    background: #F7FAFB;
 }
 .newsletter-pitch h3 {
     margin-bottom: 20px;
@@ -847,7 +862,6 @@ p.form-allowed-tags {
 
 .site-footer .site-info {
     font-size: 12px;
-    margin-top: 50px;
 }
 
 .back-to-top {
